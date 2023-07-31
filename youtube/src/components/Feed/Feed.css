@@ -1,0 +1,75 @@
+.feed {
+    display: grid;
+    width: 83%;
+    float: right;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background-color: #131313;
+    color: #fff;
+    user-select: none;
+    overflow-y: hidden;
+    height: fit-content !important;
+}
+
+.feed__video {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.feed__video:hover .video__image {
+    transform: scale(1.009);
+    border-radius: 0px;
+}
+
+.video__image {
+    width: 270px !important;
+    height: 150px !important;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.feed__bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.feed__bottom img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feed__bottom-text-tick {
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.feed__bottom-texts {
+    display: flex;
+    flex-direction: column;
+    inline-size: 240px;
+}
+
+.feed__bottom-text {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5x;
+    margin-top: 2.5px;
+    color: gray !important;
+    align-items: center;
+}
+
+.feed__bottom-text p {
+    margin-right: 5px;
+    margin-left: 5px;
+}

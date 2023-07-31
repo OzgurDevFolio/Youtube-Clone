@@ -1,0 +1,61 @@
+.errorpage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-top: 240px;
+    color: #fff;
+}
+
+.errorpage img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
+.errorpage h1 {
+    font-size: 50px;
+}
+
+.errorpage p {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: gray;
+}
+
+.homebutton {
+    width: fit-content;
+    height: fit-content;
+}
+
+.homebutton button {
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    width: 130px;
+    height: 55px;
+}
+
+.homebutton button:hover {
+    transform: scale(1.03);
+}
+
+.errorpage a {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.errorpage a:hover {
+    text-decoration: underline;
+}
