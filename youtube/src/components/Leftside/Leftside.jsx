@@ -43,9 +43,11 @@ export default function Leftside() {
 
     return (
         <>
-            <div className="leftside" onClick={overflowDisplay}>
+            <div className="leftside">
                 <div className="leftside__top">
-                    <MenuIcon className="leftside__menuicon" />
+                    <div className=" h-fit w-fit" onClick={onclickLeftside}>
+                        <MenuIcon className="leftside__menuicon" />
+                    </div>
                     <img src={Logo} alt="Logo" className="cursor-pointer" onClick={navigateToHome} />
                 </div>
                 <div className="leftside__content-top">
@@ -179,6 +181,25 @@ export default function Leftside() {
                         <FeedbackIcon className="leftside__icon" />
                         <span>Send Feedback</span>
                     </div>
+                </div>
+            </div>
+            <div className="onclick__leftside">
+                <MenuIcon className="leftside__menuicon items-center justify-center ml-7 mb-6 mt-3" />
+                <div className="onclick__leftside-link">
+                    <HomeIcon className="leftside__icon-bottom" />
+                    <span>Home</span>
+                </div>
+                <div className="onclick__leftside-link">
+                    <SlowMotionVideoIcon className="leftside__icon-bottom" />
+                    <span>Shorts</span>
+                </div>
+                <div className="onclick__leftside-link">
+                    <SubscriptionsIcon className="leftside__icon-bottom" />
+                    <span>Subscriptions</span>
+                </div>
+                <div className="onclick__leftside-link">
+                    <VideoLibraryIcon className="leftside__icon-bottom" />
+                    <span>Library</span>
                 </div>
             </div>
         </>
