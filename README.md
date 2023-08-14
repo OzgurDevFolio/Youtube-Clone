@@ -1,4 +1,4 @@
-
+# ABOUT YOUTUBE CLONE APP
 
 < 1. I made youtube clone web app />
 
@@ -8,6 +8,4 @@
 
 
 
-![About Youtube](file:///Users/ozgurdemirbacak/Desktop/Screenshot%202023-08-14%20at%2009.50.34.png)
-
-![About Youtube](file:///Users/ozgurdemirbacak/Desktop/Screenshot%202023-08-14%20at%2009.50.44.png)
+![About Youtube](https://myoctocat.com/assets/images/base-octocat.svg)
