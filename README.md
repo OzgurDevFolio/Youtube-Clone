@@ -2,6 +2,4 @@
 
 1. Make it Responsive
 
-2. Deploying from videos
-
-3. If it can't search all solutions and try all of them
+2. Deploy it, if it can't search all solutions and try all of them

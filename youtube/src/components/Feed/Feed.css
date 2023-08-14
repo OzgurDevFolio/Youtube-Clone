@@ -73,3 +73,7 @@
     margin-right: 5px;
     margin-left: 5px;
 }
+
+.responsive__feed {
+    width: 92%;
+}

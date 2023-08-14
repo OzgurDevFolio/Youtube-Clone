@@ -116,3 +116,24 @@
 .navbar__bottom-button:hover {
     background-color: #404040;
 }
+
+.moreIcon {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    right: 0;
+    color: #fff;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 200px;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+}
+
+.moreIcon:hover {
+    background-color: #303030;
+}

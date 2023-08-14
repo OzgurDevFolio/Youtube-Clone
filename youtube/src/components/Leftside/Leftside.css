@@ -1,3 +1,6 @@
+@import '../Feed/Feed.css';
+@import '../Navbar/Navbar.css';
+
 .leftside {
     display: flex;
     position: fixed;
@@ -43,9 +46,16 @@
     align-items: center;
 }
 
-.leftside__top img {
+.leftside__top-img {
+    display: flex;
     width: 150px;
     height: 80px;
+}
+
+.leftside__top-img2 {
+    display: none !important;
+    width: 60px;
+    height: 60px;
 }
 
 .leftside__menuicon {
@@ -184,7 +194,11 @@
 }
 
 .onclick__display {
-    display: flex;
+    display: flex !important;
+}
+
+.onclick__notdisplay {
+    display: none !important;
 }
 
 .onclick__leftside {
@@ -200,6 +214,8 @@
     bottom: 0;
     height: 100vh;
     padding: 5px 10px;
+    margin-left: -5px;
+    margin-top: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -226,4 +242,115 @@
 
 .onclick__leftside-link:hover {
     background-color: #404040;
+}
+
+@media screen and (max-width: 1260px) {
+    .leftside__top-img {
+        display: none;
+    }
+
+    .leftside__top-img2 {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .onclick__leftside {
+        display: flex;
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .onclick__leftside {
+        font-size: 10px !important;
+    }
+
+    .feed {
+        width: 92% !important;
+    }
+
+    .navbar {
+        margin-right: 100px !important;
+    }
+
+    .navbar__right-icons {
+        margin-right: 60px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar__right-icons {
+        display: none !important;
+    }
+
+    .moreIcon {
+        display: flex !important;
+    }
+
+    .navbar__mic {
+        margin-right: -150px !important;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .feed {
+        margin-right: -50px;
+    }
+
+    .feed__video {
+        justify-content: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .navbar__top {
+        margin-left: 120px !important;
+    }
+
+    .menuIcon {
+        margin-right: -150px !important;
+    }
+
+    .navbar__mic {
+        font-size: 10px !important;
+    }
+
+    .navbar__bottom {
+        display: none !important;
+    }
+
+    .feed {
+        margin-right: -50px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .navbar__mic {
+        display: none !important;
+    }
+
+    .menuIcon {
+        margin-bottom: 50px !important;
+        margin-right: 100px !important;
+    }
+
+    .navbar__search {
+        margin-left: 400px;
+        width: 300px !important;
+        height: 30px !important;
+    }
+
+    .navbar__search input {
+        width: 300px !important;
+        height: 30px !important;
+    }
+
+    .feed {
+        justify-content: center !important;
+        justify-self: center !important;
+        margin-right: -100px !important;
+    }
 }

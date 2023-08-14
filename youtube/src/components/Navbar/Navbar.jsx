@@ -6,6 +6,7 @@ import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack'
 import { Avatar } from '@mui/material'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
 import ProfilePhoto from '/assets/profile.jpeg'
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 
 export default function Navbar() {
     return (
@@ -25,6 +26,9 @@ export default function Navbar() {
                         <VideoCameraBackIcon className="navbar__right-icon" />
                         <NotificationsNoneIcon className="navbar__right-icon" />
                         <Avatar src={ProfilePhoto} className=" ml-5 cursor-pointer" />
+                    </div>
+                    <div className="moreIcon">
+                        <MoreHorizIcon />
                     </div>
                 </div>
                 <div className="navbar__bottom">

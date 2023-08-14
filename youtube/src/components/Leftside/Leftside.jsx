@@ -1,5 +1,6 @@
 import React from 'react'
 import './Leftside.css'
+import '../Feed/Feed.css'
 import { useNavigate } from 'react-router-dom'
 import HomeIcon from '@mui/icons-material/Home'
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions'
@@ -29,6 +30,7 @@ import SettingsIcon from '@mui/icons-material/Settings'
 import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import FeedbackIcon from '@mui/icons-material/Feedback'
+import Youtube from '/assets/youtube-logo.png'
 
 export default function Leftside() {
     const navigate = useNavigate()
@@ -41,14 +43,27 @@ export default function Leftside() {
         navigate('/home')
     }
 
+    const responsiveLeftsideMenu = () => {
+        document.querySelector('.onclick__leftside').classList.toggle('onclick__display'), document.querySelector('.leftside').classList.toggle('onclick__notdisplay')
+    }
+
+    const feedResponsive = () => {
+        document.querySelector('.feed').classList.toggle('responsive__feed')
+    }
+
     return (
         <>
-            <div className="leftside">
+            <div className="leftside" onClick={overflowDisplay}>
                 <div className="leftside__top">
-                    <div className=" h-fit w-fit" onClick={onclickLeftside}>
+                    <div
+                        className=" h-fit w-fit"
+                        onClick={() => {
+                            responsiveLeftsideMenu(), feedResponsive()
+                        }}>
                         <MenuIcon className="leftside__menuicon" />
                     </div>
-                    <img src={Logo} alt="Logo" className="cursor-pointer" onClick={navigateToHome} />
+                    <img src={Logo} alt="Logo" className="leftside__top-img cursor-pointer" onClick={navigateToHome} />
+                    <img src={Youtube} alt="Logo" className="leftside__top-img2 cursor-pointer flex" />
                 </div>
                 <div className="leftside__content-top">
                     <div className="leftside__content-top__home">
@@ -184,7 +199,13 @@ export default function Leftside() {
                 </div>
             </div>
             <div className="onclick__leftside">
-                <MenuIcon className="leftside__menuicon items-center justify-center ml-7 mb-6 mt-3" />
+                <div
+                    className=" flex flex-col mb-5 h-fit w-fit text-md md: text-sm items-center rounded-md "
+                    onClick={() => {
+                        responsiveLeftsideMenu(), feedResponsive()
+                    }}>
+                    <MenuIcon className="leftside__menuicon items-center justify-center ml-5  md: text-xs mb-6 mt-3" />
+                </div>
                 <div className="onclick__leftside-link">
                     <HomeIcon className="leftside__icon-bottom" />
                     <span>Home</span>
@@ -195,7 +216,7 @@ export default function Leftside() {
                 </div>
                 <div className="onclick__leftside-link">
                     <SubscriptionsIcon className="leftside__icon-bottom" />
-                    <span>Subscriptions</span>
+                    <span>Subs</span>
                 </div>
                 <div className="onclick__leftside-link">
                     <VideoLibraryIcon className="leftside__icon-bottom" />
