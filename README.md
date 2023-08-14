@@ -1,7 +1,13 @@
-# Youtube-Clone
 
-1. Make it Responsive
 
-2. Deploying from videos
+< 1. I made youtube clone web app />
 
-3. If it can't search all solutions and try all of them
+< 2. This app is just basics of youtube website />
+
+< 3. Here are the some photos from my youtube clone web app: />
+
+
+
+![About Youtube](file:///Users/ozgurdemirbacak/Desktop/Screenshot%202023-08-14%20at%2009.50.34.png)
+
+![About Youtube](file:///Users/ozgurdemirbacak/Desktop/Screenshot%202023-08-14%20at%2009.50.44.png)
