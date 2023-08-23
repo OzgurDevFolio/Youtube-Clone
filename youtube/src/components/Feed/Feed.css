@@ -1,8 +1,8 @@
 .feed {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     width: 83%;
     float: right;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     background-color: #131313;
     color: #fff;
     user-select: none;
